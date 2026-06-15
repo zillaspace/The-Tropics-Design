@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Tropics · A Midcentury Polynesian Resort, Reborn</title>
+<meta name="description" content="A 92 key Polynesian resort on South Palm Canyon, recovered through a focused $5.5M design program. The largest pool footprint in the desert." />
+
+<!-- Social share preview. For best results in iMessage, set og:image and og:url to the full https link once hosted, for example https://yourdomain.com/tropicscard.jpg -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="The Tropics" />
+<meta property="og:title" content="The Tropics · A Midcentury Polynesian Resort, Reborn" />
+<meta property="og:description" content="A 92 key Polynesian resort on South Palm Canyon, recovered through a focused $5.5M design program. The largest pool footprint in the desert." />
+<meta property="og:image" content="tropicscard.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The Tropics, a midcentury Polynesian resort in Palm Springs" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Tropics · A Midcentury Polynesian Resort, Reborn" />
+<meta name="twitter:description" content="A storied Palm Springs Polynesian resort, recovered through a focused $5.5M design program." />
+<meta name="twitter:image" content="tropicscard.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --coral:#CB5A33; --coral-bright:#E37544; --palm:#1F4E46; --palm-deep:#123129;
+  --sand:#F3ECE1; --sand-deep:#E8DCC8; --lava:#1E1812; --ink:#2A211A;
+  --brass:#B08D4F; --cream:#FBF7F0; --muted:#7A6E5F;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--cream); color:var(--ink);
+  font-family:"Hanken Grotesk",system-ui,sans-serif; font-weight:400;
+  font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+/* grain overlay */
+body::after{
+  content:""; position:fixed; inset:0; z-index:9999; pointer-events:none; opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif; font-weight:500; line-height:1.05; margin:0;}
+a{color:inherit}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+.eyebrow{font-family:"Hanken Grotesk"; font-weight:600; font-size:12px; letter-spacing:.22em; text-transform:uppercase; color:var(--coral);}
+.lead{font-size:20px; line-height:1.5; color:var(--ink);}
+
+/* NAV */
+nav{position:sticky; top:0; z-index:100; backdrop-filter:saturate(140%) blur(8px);
+  background:rgba(251,247,240,.82); border-bottom:1px solid var(--sand-deep);}
+nav .wrap{display:flex; align-items:center; justify-content:space-between; height:56px;}
+nav .brand{font-family:"Fraunces"; font-weight:600; letter-spacing:.02em; font-size:18px;}
+nav .brand span{color:var(--coral)}
+nav .links{display:flex; gap:22px; font-size:13px; font-weight:500; letter-spacing:.02em;}
+nav .links a{text-decoration:none; color:var(--muted); transition:color .2s; white-space:nowrap;}
+nav .links a:hover{color:var(--coral)}
+@media(max-width:860px){nav .links{display:none}}
+
+/* HERO */
+.hero{position:relative; min-height:96vh; display:flex; align-items:flex-end; overflow:hidden;
+  background:
+    linear-gradient(160deg, rgba(30,24,18,.42) 0%, rgba(30,24,18,.34) 38%, rgba(20,16,12,.78) 100%),
+    radial-gradient(120% 80% at 78% 8%, rgba(227,117,68,.30), transparent 55%),
+    url("pool-night-palms.jpg");
+  background-size:cover; background-position:center;
+  color:#fff;}
+.hero::before{content:""; position:absolute; inset:0; opacity:.18;
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.5) 0 2px,transparent 2px 26px),
+                   repeating-linear-gradient(0deg,rgba(255,255,255,.5) 0 2px,transparent 2px 26px);
+  mask-image:radial-gradient(70% 60% at 80% 20%,#000,transparent 70%);}
+.hero::after{content:""; position:absolute; left:0; right:0; bottom:0; height:30%;
+  background:linear-gradient(to top,rgba(20,16,12,.55),transparent);}
+.hero .wrap{position:relative; z-index:2; padding-bottom:8vh; width:100%;}
+.hero .kicker{font-family:"Hanken Grotesk"; font-weight:600; letter-spacing:.28em; text-transform:uppercase; font-size:12px; color:rgba(255,255,255,.85);}
+.hero h1{font-size:clamp(56px,12vw,170px); font-weight:600; letter-spacing:-.02em; margin:.12em 0 .04em; text-shadow:0 2px 40px rgba(0,0,0,.25);}
+.hero .sub{font-family:"Fraunces"; font-style:italic; font-weight:400; font-size:clamp(20px,3.4vw,34px); color:#fff;}
+.hero .meta{margin-top:22px; font-size:15px; color:rgba(255,255,255,.9); display:flex; flex-wrap:wrap; gap:8px 18px; font-weight:500;}
+.hero .meta b{font-weight:700}
+.hero .role{margin-top:26px; font-size:13px; letter-spacing:.04em; color:rgba(255,255,255,.78); max-width:540px;}
+.scrollcue{position:absolute; left:50%; bottom:22px; transform:translateX(-50%); z-index:3; color:rgba(255,255,255,.7); font-size:11px; letter-spacing:.2em; text-transform:uppercase; animation:bob 2.4s ease-in-out infinite;}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,7px)}}
+
+/* SECTIONS */
+section{padding:92px 0;}
+.section-head{max-width:760px; margin-bottom:46px;}
+.section-head h2{font-size:clamp(34px,5.5vw,58px); letter-spacing:-.015em; margin:.18em 0 .35em;}
+.section-head p{font-size:18px; color:var(--ink);}
+.dark{background:var(--lava); color:var(--sand);}
+.dark .section-head p,.dark p{color:rgba(243,236,225,.86)}
+.dark .eyebrow{color:var(--coral-bright)}
+.palm{background:var(--palm-deep); color:var(--sand);}
+.palm .eyebrow{color:#7FC9B6}
+.palm p,.palm .section-head p{color:rgba(243,236,225,.88)}
+.sandbg{background:var(--sand);}
+
+.divider{height:1px; background:linear-gradient(to right,transparent,var(--brass),transparent); opacity:.5; margin:0;}
+
+/* reveal */
+.reveal{opacity:0; transform:translateY(26px); transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);}
+.reveal.in{opacity:1; transform:none;}
+
+/* SLIDES */
+.slide{padding:72px 0; border-top:1px solid rgba(176,141,79,.28);}
+.slide:first-child{border-top:none}
+.slide .grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;}
+@media(max-width:880px){.slide .grid{grid-template-columns:1fr; gap:30px}}
+.slide .num{font-family:"Fraunces"; font-weight:300; font-size:15px; letter-spacing:.18em; color:var(--coral);}
+.slide h3{font-size:clamp(28px,4.2vw,46px); letter-spacing:-.015em; margin:.18em 0 .5em; color:var(--sand);}
+.dark .slide h3{color:var(--sand)}
+.slide .thesis{font-family:"Fraunces"; font-style:italic; font-size:21px; line-height:1.4; color:#fff; margin-bottom:26px;}
+.points{list-style:none; padding:0; margin:0 0 6px;}
+.points li{position:relative; padding-left:24px; margin-bottom:13px; color:rgba(243,236,225,.9); font-size:16.5px;}
+.points li::before{content:""; position:absolute; left:0; top:11px; width:9px; height:9px; background:var(--coral); transform:rotate(45deg);}
+.imgzone{position:relative; min-height:300px; border-radius:3px; overflow:hidden; display:flex; align-items:flex-end;
+  border:1px solid rgba(176,141,79,.4);
+  background:
+    radial-gradient(100% 80% at 80% 12%, rgba(227,117,68,.5), transparent 60%),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 22px),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 22px),
+    linear-gradient(155deg,#3a3026,#1b1610);}
+.imgzone .tag{position:absolute; top:14px; left:14px; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--brass); border:1px solid rgba(176,141,79,.5); padding:4px 8px; border-radius:2px;}
+.imgzone .vis{padding:18px; font-size:13.5px; line-height:1.5; color:rgba(243,236,225,.82); background:linear-gradient(to top,rgba(20,16,12,.78),transparent);}
+.imgzone .vis b{color:var(--coral-bright); font-weight:600; letter-spacing:.04em;}
+.imgzone.has-photo{background-size:cover; background-position:center; min-height:360px;}
+.imgzone.has-photo::before{content:""; position:absolute; inset:0; pointer-events:none; background:linear-gradient(135deg,rgba(20,16,12,.5),transparent 42%);}
+.imgzone.has-photo .tag{z-index:2; background:rgba(20,16,12,.35);}
+.imgzone.has-photo.fit-contain{background-size:contain; background-repeat:no-repeat; background-color:#15110d; min-height:460px;}
+.notes.vdir{border-left-color:var(--coral); color:rgba(243,236,225,.72);}
+.notes{margin-top:18px; padding:16px 18px; border-left:3px solid var(--brass); background:rgba(255,255,255,.04); font-size:14.5px; line-height:1.55; color:rgba(243,236,225,.8);}
+.notes b{color:var(--sand)}
+
+/* TABLES */
+.tbl{width:100%; border-collapse:collapse; font-size:15px; margin-top:8px;}
+.tbl th{background:var(--palm); color:#fff; text-align:left; padding:11px 13px; font-family:"Hanken Grotesk"; font-weight:600; font-size:12.5px; letter-spacing:.04em; vertical-align:top;}
+.tbl td{padding:11px 13px; border-bottom:1px solid var(--sand-deep); vertical-align:top; color:var(--ink);}
+.tbl tr:hover td{background:rgba(203,90,51,.05)}
+.tbl .rank{font-family:"Fraunces"; font-weight:600; color:var(--coral); text-align:center; width:42px;}
+.tbl .name{font-weight:600}
+.pri{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:2px;}
+.pri.high{background:var(--coral); color:#fff}
+.pri.med{background:var(--brass); color:#fff}
+.pri.exp{background:var(--sand-deep); color:var(--ink)}
+.tblwrap{overflow-x:auto}
+.sp-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px; margin:30px 0 6px;}
+.sp-card{background:var(--cream); border:1px solid var(--sand-deep); border-left:3px solid var(--coral); padding:14px 16px; border-radius:4px;}
+.sp-card .n{font-family:"Fraunces"; font-weight:500; font-size:26px; color:var(--ink); line-height:1.05;}
+.sp-card .l{font-size:12px; color:var(--muted); margin-top:5px; letter-spacing:.02em;}
+.tbl td.num,.tbl th.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap;}
+.tbl tr.sub td{font-weight:700; background:rgba(31,78,70,.06); border-top:2px solid var(--palm);}
+.tbl tr.grand td{font-weight:700; background:rgba(203,90,51,.10); border-top:2px solid var(--coral);}
+.tbl tr.grp td{background:var(--sand-deep); font-family:"Hanken Grotesk"; font-weight:700; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--palm-deep);}
+.sp-tabtitle{font-family:"Fraunces"; font-weight:600; font-size:19px; margin:34px 0 6px; color:var(--ink);}
+.sp-note{font-size:13px; color:var(--muted); margin-top:16px; line-height:1.55;}
+.sp-caveat{background:rgba(203,90,51,.07); border:1px solid rgba(203,90,51,.25); border-radius:6px; padding:16px 18px; margin:24px 0 6px; font-size:14.5px; color:var(--ink); line-height:1.55;}
+.sp-caveat b{color:var(--coral);}
+.sp-principles{list-style:none; padding:0; margin:16px 0 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px 30px;}
+.sp-principles li{position:relative; padding-left:20px; font-size:14.5px; line-height:1.5; color:var(--ink);}
+.sp-principles li::before{content:""; position:absolute; left:0; top:8px; width:8px; height:8px; background:var(--coral); transform:rotate(45deg);}
+.sp-principles b{color:var(--palm-deep);}
+.sp-deliv{list-style:none; padding:0; margin:16px 0 0; columns:2; column-gap:38px;}
+.sp-deliv li{position:relative; padding-left:20px; margin-bottom:10px; font-size:14px; line-height:1.45; color:var(--ink); break-inside:avoid;}
+.sp-deliv li::before{content:""; position:absolute; left:0; top:6px; width:7px; height:7px; border:1.5px solid var(--coral); transform:rotate(45deg);}
+@media(max-width:680px){.sp-deliv{columns:1}}
+.sp-pos{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px 32px; margin:26px 0 4px; border-top:1px solid var(--sand-deep); border-bottom:1px solid var(--sand-deep); padding:20px 0;}
+.sp-pos .k{font-family:"Hanken Grotesk"; font-weight:700; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--coral); margin-bottom:6px;}
+.sp-pos .v{font-size:15px; line-height:1.5; color:var(--ink);}
+.sp-lead{font-size:14.5px; color:var(--ink); margin:8px 0 0; line-height:1.5;}
+
+/* PROFILE CARDS */
+.profiles{display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:22px; margin-top:40px;}
+.card{background:#fff; border:1px solid var(--sand-deep); border-radius:4px; padding:24px; transition:transform .3s, box-shadow .3s;}
+.card:hover{transform:translateY(-4px); box-shadow:0 18px 40px -22px rgba(30,24,18,.4)}
+.card .rk{font-family:"Fraunces"; color:var(--coral); font-size:14px; letter-spacing:.14em;}
+.card h4{font-size:21px; margin:6px 0 4px; letter-spacing:-.01em;}
+.card .cat{font-size:12.5px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--palm); margin-bottom:14px;}
+.card dl{margin:0; font-size:14.5px; line-height:1.5;}
+.card dt{font-weight:700; color:var(--coral); margin-top:11px; font-size:12px; letter-spacing:.04em; text-transform:uppercase;}
+.card dd{margin:2px 0 0; color:var(--ink);}
+
+/* AWARDS / PLAN groups */
+.tiergroup{margin-bottom:42px;}
+.tiergroup h3{font-size:24px; color:var(--coral); margin-bottom:4px;}
+.tiergroup .sub{font-size:14px; color:var(--muted); margin-bottom:16px;}
+
+/* tables on dark or palm backgrounds: keep body text legible */
+.palm .tbl td,.dark .tbl td{color:var(--sand); border-bottom-color:rgba(176,141,79,.26);}
+.palm .tbl .name,.dark .tbl .name{color:#fff;}
+.palm .tbl tr:hover td,.dark .tbl tr:hover td{background:rgba(255,255,255,.05);}
+.palm .tiergroup .sub,.dark .tiergroup .sub{color:rgba(243,236,225,.62);}
+.tbl .seat{font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:700; color:var(--muted);}
+
+/* condensed deck index */
+.deckindex{display:grid; grid-template-columns:1fr 1fr; gap:0 48px; margin-top:6px;}
+@media(max-width:780px){.deckindex{grid-template-columns:1fr; gap:0}}
+.dl{display:flex; gap:16px; padding:15px 2px; border-top:1px solid rgba(176,141,79,.20);}
+.dl-n{font-family:"Fraunces"; font-weight:300; font-size:14px; letter-spacing:.12em; color:var(--coral-bright); padding-top:4px; min-width:26px;}
+.dl-t{font-family:"Fraunces"; font-weight:500; font-size:18.5px; color:var(--sand); letter-spacing:-.01em; line-height:1.15;}
+.dl-th{font-size:14px; line-height:1.5; color:rgba(243,236,225,.78); margin-top:4px;}
+
+/* MOODBOARD */
+.mood{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:26px; margin-top:34px;}
+.mood .block h4{font-size:20px; color:var(--coral); margin-bottom:10px;}
+.mood ul{margin:0; padding-left:18px;}
+.mood li{margin-bottom:9px; line-height:1.5;}
+.swatches{display:flex; gap:0; margin-top:34px; border-radius:4px; overflow:hidden; box-shadow:0 12px 30px -20px rgba(0,0,0,.4);}
+.sw{flex:1; height:96px; display:flex; align-items:flex-end; padding:9px; font-size:11px; letter-spacing:.04em; color:#fff;}
+@media(max-width:620px){.sw{height:72px; font-size:9px}}
+.moodgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:10px; margin-top:30px;}
+.moodgrid .mg{aspect-ratio:4/3; background-size:cover; background-position:center; border-radius:4px; position:relative;}
+.moodgrid .mg::after{content:""; position:absolute; inset:0; border-radius:4px; box-shadow:inset 0 0 0 1px rgba(176,141,79,.20);}
+@media(max-width:520px){.moodgrid{grid-template-columns:repeat(2,1fr)}}
+.photoband{position:relative; height:clamp(190px,26vh,300px); background-size:cover; background-position:center; display:flex; align-items:flex-end;}
+.photoband::before{content:""; position:absolute; inset:0; background:linear-gradient(to top,rgba(20,16,12,.6),rgba(20,16,12,.1));}
+.photoband .cap{position:relative; width:100%; max-width:1120px; margin:0 auto; padding:0 28px 18px; color:var(--sand); font-family:"Hanken Grotesk"; font-weight:600; font-size:12px; letter-spacing:.22em; text-transform:uppercase;}
+
+/* EMAILS */
+.emails{display:grid; gap:24px; margin-top:34px;}
+.email{background:#fff; border:1px solid var(--sand-deep); border-radius:4px; overflow:hidden;}
+.email .ehead{background:var(--palm-deep); color:#fff; padding:16px 22px;}
+.email .ehead .to{font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#7FC9B6; font-weight:600;}
+.email .ehead .who{font-family:"Fraunces"; font-size:20px; margin-top:3px;}
+.email .ebody{padding:20px 22px;}
+.email .subj{font-size:14px; margin-bottom:14px; color:var(--muted);}
+.email .subj b{color:var(--ink); font-weight:700;}
+.email .ebody p{font-size:15.5px; margin:0 0 12px; line-height:1.6;}
+.email .sig{font-style:italic; color:var(--muted)}
+
+/* FOOTER */
+footer{background:var(--lava); color:rgba(243,236,225,.7); padding:70px 0 50px; text-align:center;}
+footer .big{font-family:"Fraunces"; font-style:italic; font-size:clamp(24px,4vw,40px); color:var(--sand); max-width:760px; margin:0 auto 26px; line-height:1.3;}
+footer .small{font-size:12.5px; letter-spacing:.04em;}
+.disc{max-width:760px; margin:0 auto; font-size:12.5px; color:rgba(243,236,225,.55); line-height:1.6; margin-top:30px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">The Tropics<span>.</span></div>
+    <div class="links">
+      <a href="#summary">Summary</a>
+      <a href="#deck">The Deck</a>
+      <a href="#space">Space</a>
+      <a href="#team">Team</a>
+      <a href="#awards">Awards</a>
+      <a href="#plan">90 Days</a>
+      <a href="#mood">Moodboard</a>
+      <a href="#outreach">Outreach</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker reveal">Las Brisas Hotel Group &nbsp;·&nbsp; Palm Springs, California</div>
+    <h1 class="reveal">THE TROPICS</h1>
+    <div class="sub reveal">A Midcentury Polynesian Resort, Reborn</div>
+    <div class="meta reveal">
+      <span><b>92</b> keys</span><span>·</span>
+      <span><b>~3</b> acres</span><span>·</span>
+      <span><b>$5.5M</b> design &amp; repositioning program</span><span>·</span>
+      <span>411 E. Palm Canyon Drive</span>
+    </div>
+    <div class="role reveal">Design and development deck blueprint. Prepared for ownership, investors, design partners, and press.</div>
+  </div>
+  <div class="scrollcue">scroll</div>
+</header>
+
+<!-- EXECUTIVE SUMMARY -->
+<section id="summary" class="sandbg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Executive Summary</div>
+      <h2>We are not inventing a brand. We are recovering one.</h2>
+    </div>
+    <div class="reveal" style="max-width:820px">
+      <p class="lead" style="margin-bottom:22px">The Tropics is one of the most photographed small hotels in the Coachella Valley: a 92 key Polynesian resort at the gateway to South Palm Canyon Drive, with documented Oceanic Arts ties, the founding of Tiki Oasis, and Rat Pack era history. It runs today as a tired motor lodge, well below potential and undercapitalized in design and operations. A disciplined $5.5M program, spent first where it moves rate, turns it into a curated Midcentury Polynesian resort with the largest pool footprint in the desert and an outdoor program no boutique competitor can match. We are not inventing a brand. We are recovering one.</p>
+      <p>The timing fits the place. Palm Springs sits 90 miles from Los Angeles and is the default long weekend reset for design literate Angelenos, midcentury modernism is the city's global brand, and Modernism Week is a built in press engine. The creative strategy pairs a hospitality grade interior lead with a local architect of record, a tiki heritage specialist for the bar, an awards grade landscape vision for the pool and lawn, and a quiet wellness and technology layer. Heritage is held to a high design bar, never kitsch, and the awards roadmap is sequenced honestly: local and press wins now, the major hospitality design awards after completion.</p>
+    </div>
+  </div>
+</section>
+
+<div class="photoband reveal" style="background-image:url('pool-sunset-umbrellas.jpg')"><div class="cap">Golden hour</div></div>
+
+<!-- THE DECK -->
+<section id="deck" class="dark">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">The Deck, At A Glance</div>
+      <h2 style="color:var(--sand)">Twenty four slides, the full spine.</h2>
+      <p>The narrative arc in one scan: each line is a slide and its one line thesis. The detailed points, visual direction, and speaker notes live in the working deck. The design substance an architect or designer needs sits in the program section that follows.</p>
+    </div>
+    <div id="slides"></div>
+  </div>
+</section>
+
+<!-- CREATIVE TEAM -->
+<section id="space" class="sandbg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Design Program</div>
+      <h2>The program, in specifics.</h2>
+      <p>92 keys. 1964. 2.97 acres of Agua Caliente ground lease. Roughly 43,000 SF across three exterior corridor buildings, the largest pool in the desert, three F&amp;B outlets on one 1,500 SF kitchen. Areas are planning estimates, to be measured on site.</p>
+    </div>
+
+    <div class="sp-cards reveal">
+      <div class="sp-card"><div class="n">92</div><div class="l">Keys</div></div>
+      <div class="sp-card"><div class="n">1964</div><div class="l">Built, renovated 2023</div></div>
+      <div class="sp-card"><div class="n">2.97 ac</div><div class="l">Site, 129,373 SF</div></div>
+      <div class="sp-card"><div class="n">~43,000</div><div class="l">SF interior, est.</div></div>
+      <div class="sp-card"><div class="n">3</div><div class="l">F&amp;B outlets, one shared kitchen</div></div>
+      <div class="sp-card"><div class="n">65 ft</div><div class="l">Pool, largest in the desert</div></div>
+      <div class="sp-card"><div class="n">~313</div><div class="l">SF average per key</div></div>
+      <div class="sp-card"><div class="n">~62,700</div><div class="l">SF surface parking</div></div>
+      <div class="sp-card"><div class="n">+150</div><div class="l">Desert palms to plant, the oasis canopy</div></div>
+      <div class="sp-card"><div class="n">100%</div><div class="l">Parking under solar carports, shade plus power</div></div>
+      <div class="sp-card"><div class="n">92</div><div class="l">Lava lamps, one glowing in every room</div></div>
+      <div class="sp-card"><div class="n">9</div><div class="l">Fire pits, torches, and grills across the grounds</div></div>
+    </div>
+
+    <div class="sp-pos reveal">
+      <div><div class="k">Positioning</div><div class="v">Sophisticated midcentury Polynesian. A social resort built on the pool, the bar, and the light.</div></div>
+      <div><div class="k">Guest</div><div class="v">Design literate Angelenos using the desert as a weekend reset, and who they bring.</div></div>
+      <div><div class="k">Experience layer</div><div class="v">AI takes the friction: mobile key, instant concierge, energy and maintenance intelligence. People take the warmth: the welcome, the bar, the pool.</div></div>
+    </div>
+
+    <div class="sp-tabtitle reveal">Guest rooms</div>
+    <div class="tblwrap reveal"><table class="tbl">
+      <thead><tr><th>Room type</th><th class="num">Keys</th><th class="num">Est. SF per key</th><th class="num">Total SF</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr><td>King</td><td class="num">39</td><td class="num">275</td><td class="num">10,725</td><td>Published</td></tr>
+        <tr><td>Double Queen</td><td class="num">26</td><td class="num">300</td><td class="num">7,800</td><td>Estimate</td></tr>
+        <tr><td>Tahitian King</td><td class="num">6</td><td class="num">275</td><td class="num">1,650</td><td>Estimate</td></tr>
+        <tr><td>Tahitian Double Queen</td><td class="num">4</td><td class="num">300</td><td class="num">1,200</td><td>Estimate</td></tr>
+        <tr><td>Parlor Suite (King)</td><td class="num">8</td><td class="num">425</td><td class="num">3,400</td><td>Estimate</td></tr>
+        <tr><td>Parlor Suite (Double Queen)</td><td class="num">7</td><td class="num">460</td><td class="num">3,220</td><td>Estimate</td></tr>
+        <tr><td>Tiki Suite (Double Queen)</td><td class="num">1</td><td class="num">500</td><td class="num">500</td><td>Estimate</td></tr>
+        <tr><td>Double Queen (ADA)</td><td class="num">1</td><td class="num">275</td><td class="num">275</td><td>Published</td></tr>
+        <tr class="sub"><td>Guest rooms subtotal</td><td class="num">92</td><td class="num">313 avg</td><td class="num">28,770</td><td></td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="sp-tabtitle reveal">Interior areas (excluding guest rooms)</div>
+    <div class="tblwrap reveal"><table class="tbl">
+      <thead><tr><th>Space</th><th class="num">Est. SF</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">Arrival and public</td></tr>
+        <tr><td>Lobby, front desk, guest lounge, business center</td><td class="num">1,800</td><td>Estimate</td></tr>
+        <tr><td>Fitness center</td><td class="num">600</td><td>Estimate</td></tr>
+        <tr><td>Spa, treatment, and 12 person sauna</td><td class="num">500</td><td>Estimate</td></tr>
+        <tr><td>Indoor meeting (Outrigger and Bamboo Boardroom)</td><td class="num">650</td><td>Published</td></tr>
+        <tr class="grp"><td colspan="3">Food and beverage</td></tr>
+        <tr><td>Sancho's and Le Fern</td><td class="num">3,020</td><td>Leased, rent roll</td></tr>
+        <tr><td>The Reef Bar</td><td class="num">3,000</td><td>Leased JV, rent roll</td></tr>
+        <tr><td>Commercial kitchen</td><td class="num">1,500</td><td>Offering memo</td></tr>
+        <tr class="grp"><td colspan="3">Back of house</td></tr>
+        <tr><td>Housekeeping, laundry, and storage</td><td class="num">1,200</td><td>Estimate</td></tr>
+        <tr><td>Admin, staff, IT, and MEP</td><td class="num">1,200</td><td>Estimate</td></tr>
+        <tr><td>Interior circulation</td><td class="num">700</td><td>Estimate</td></tr>
+        <tr class="sub"><td>Interior subtotal, excluding guest rooms</td><td class="num">14,170</td><td></td></tr>
+        <tr class="grand"><td>Total interior GBA, including guest rooms</td><td class="num">42,940</td><td>~43,000 SF</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="sp-tabtitle reveal">Outdoor and site (lot 2.97 acres, 129,373 SF)</div>
+    <div class="tblwrap reveal"><table class="tbl">
+      <thead><tr><th>Zone</th><th class="num">Est. SF</th><th>Basis</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">Pool and amenity, site coverage</td></tr>
+        <tr><td>Pool water surface (65 foot, largest in the area)</td><td class="num">2,500</td><td>Estimate</td></tr>
+        <tr><td>Spa and jacuzzi</td><td class="num">150</td><td>Estimate</td></tr>
+        <tr><td>Pool deck and sun terrace</td><td class="num">9,000</td><td>Estimate</td></tr>
+        <tr><td>Tahitian Lanai event lawn</td><td class="num">2,500</td><td>Published</td></tr>
+        <tr><td>Resort lawn, courtyard, and gardens</td><td class="num">10,000</td><td>Estimate</td></tr>
+        <tr><td>Cabanas, shuffleboard, and ping pong pavilion</td><td class="num">3,500</td><td>Estimate</td></tr>
+        <tr><td>Landscaping, palms, and paths</td><td class="num">12,000</td><td>Estimate</td></tr>
+        <tr class="grp"><td colspan="3">Structure and parking</td></tr>
+        <tr><td>Building footprint within the site</td><td class="num">27,000</td><td>Estimate</td></tr>
+        <tr><td>Surface parking and drive aisles</td><td class="num">62,723</td><td>Balance of site</td></tr>
+        <tr class="sub"><td>Site total</td><td class="num">129,373</td><td>2.97 acres</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="sp-tabtitle reveal">Food, beverage, and events</div>
+    <p class="sp-lead reveal">Three outlets today on one kitchen, repositioned as the restaurant lease and the Reef joint venture resolve.</p>
+    <div class="tblwrap reveal"><table class="tbl">
+      <thead><tr><th>Venue</th><th>Concept and role</th><th class="num">Target capacity</th></tr></thead>
+      <tbody>
+        <tr><td>The Reef</td><td>Signature tiki bar and comfort food, pool side. Brand and press anchor</td><td class="num">~90 covers</td></tr>
+        <tr><td>Restaurant (Sancho's footprint)</td><td>Destination dining, indoor and patio</td><td class="num">~100 covers</td></tr>
+        <tr><td>Le Fern</td><td>Intimate cocktail lounge and speakeasy</td><td class="num">~45 covers</td></tr>
+        <tr><td>Pool bar and day club</td><td>Daytime service on the pool deck</td><td class="num">~70 seats</td></tr>
+        <tr><td>Tahitian Lanai lawn</td><td>Outdoor events and weddings</td><td class="num">250 reception, 125 banquet</td></tr>
+        <tr><td>Indoor meeting</td><td>Outrigger and Bamboo Boardroom</td><td class="num">50 to 70 seated</td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="sp-tabtitle reveal">Wellness program</div>
+        <ul class="sp-principles reveal">
+      <li><b>Spa.</b> 3 to 4 treatment rooms, one couples capable, plus a relaxation lounge.</li>
+      <li><b>Heat and water.</b> The existing 12 person sauna reimagined, a cold plunge, and outdoor showers.</li>
+      <li><b>Fitness.</b> A 600 SF studio for cardio and strength, plus an outdoor movement lawn.</li>
+      <li><b>Rituals.</b> Heat, water, shade, and recovery, programmed to the desert climate.</li>
+      <li><b>Revenue.</b> Spa, day passes, and cabanas turn wellness into rate and ancillary income.</li>
+    </ul>
+
+    <div class="sp-caveat reveal"><b>On the building area.</b> The offering memorandum lists 17,084 SF, which reads as partial or assessor. A 92 key resort with two restaurants and a commercial kitchen implies roughly 43,000 SF, which this schedule estimates and the design team should confirm by measure. Each room type has a Matterport 3D tour on the resort site that can be dimensioned for exact areas.</div>
+
+    <div class="sp-tabtitle reveal">Design notes for the architect</div>
+    <ul class="sp-principles reveal">
+      <li><b>Adaptive reuse first.</b> Recover the midcentury bones across the three buildings. Renovation protects basis and speed.</li>
+      <li><b>Pool and lawn are the primary public room.</b> The social heart. Shade, water, fire for the evening.</li>
+      <li><b>Movement is outdoor.</b> Exterior corridors are an asset. Keep interior circulation minimal.</li>
+      <li><b>One kitchen, multiple outlets.</b> Coordinate the pass and storage across all venues.</li>
+      <li><b>Art direct the heritage.</b> Hold every tiki move to a high design bar. Sophisticated, never theme park.</li>
+      <li><b>Bathrooms and guestrooms lead the budget.</b> They move rate. Long lead bath fixtures set the schedule.</li>
+      <li><b>Design for the desert.</b> Deep overhangs, breeze block, sculptural shade, water as cooling.</li>
+    </ul>
+
+    <div class="sp-tabtitle reveal">Concept stage deliverables requested</div>
+    <ul class="sp-deliv reveal">
+      <li>Existing conditions measure, room areas dimensioned from the Matterport tours</li>
+      <li>Adaptive reuse strategy preserving the modernist bones across the three buildings</li>
+      <li>Site plan that keeps motor lodge parking yet reclaims frontage for arrival and landscape</li>
+      <li>Pool, spa, and lawn masterplan, the differentiator and ancillary engine</li>
+      <li>Guestroom and bathroom prototypes, the rate drivers and long lead items</li>
+      <li>Signature tiki bar concept, the brand and press anchor</li>
+      <li>Materials and FF and E boards in the desert modern Polynesian palette</li>
+      <li>MEP and desert performance concept covering shade, cooling, water, and energy</li>
+      <li>Entitlement and BIA memo covering the tribal ground lease and city approvals</li>
+      <li>Phasing and cost plan reconciled to the $5.5M program and the awards calendar</li>
+    </ul>
+
+    <p class="sp-note reveal">Published inputs: room and ADA areas (calientetropics.com), leased restaurant areas and kitchen (offering memorandum), the Outrigger meeting room and the 2,500 SF Tahitian Lanai lawn (Travel Weekly). Other areas and all capacities are planning targets from standard benchmarks scaled to the 2.97 acre lot, to be confirmed on the design tour.</p>
+  </div>
+</section>
+
+<div class="photoband reveal" style="background-image:url('pool-from-reef-bar.jpg')"><div class="cap">Pool culture</div></div>
+
+<section id="team" class="sandbg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Ranked Creative Team Shortlist</div>
+      <h2>One creative lead, a vetted bench underneath, all close to the desert.</h2>
+      <p>A creative and interior lead holds the vision. A local architect of record carries documentation, desert performance, and entitlements. Specialist craft partners deliver the tiki soul and the landscape. Below is a primary in each seat plus regional alternates, every name within working distance of the building so they can walk it, not just draw it.</p>
+    </div>
+    <div class="tblwrap reveal">
+      <table class="tbl">
+        <thead><tr><th>Target</th><th>Role and proof point</th><th>Seat</th><th>Priority</th></tr></thead>
+        <tbody id="teamrows"></tbody>
+      </table>
+    </div>
+    <div class="profiles" id="profiles"></div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards" class="palm">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Awards Roadmap</div>
+      <h2 style="color:var(--sand)">From local recognition now to the major design awards after completion.</h2>
+      <p>Most major design awards require a completed project, and several use a defined completion window. Because the renovation completes after the heavy work window, the major hospitality design push falls in the cycles that follow completion. The near term plays are local recognition, Modernism Week visibility, and concept press, which also warm up jurors and editors for later.</p>
+    </div>
+    <div id="awards-tiers"></div>
+    <div class="reveal" style="margin-top:10px; max-width:820px">
+      <p><b style="color:#7FC9B6">Sequencing.</b> Open the local and Modernism Week relationships now, build the press story through concept and construction, and stage the national and global submissions for the first full eligibility cycle after completion. Enter the same project in multiple categories where rules allow, since the bar, the guestrooms, the public space, the landscape, and the overall renovation are each strong on their own.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 90 DAY PLAN -->
+<div class="photoband reveal" style="background-image:url('bar-reef-interior-wide.jpg')"><div class="cap">The Reef</div></div>
+
+<section id="plan" class="sandbg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">90 Day Action Plan</div>
+      <h2>Engage the team, lock governance, start the clock.</h2>
+      <p>This plan complements the deal side work already in motion. It moves the creative team, design governance, concept development, and the awards and press clock forward in parallel with diligence and the capital raise.</p>
+    </div>
+    <div id="plan-phases"></div>
+  </div>
+</section>
+
+<!-- MOODBOARD -->
+<section id="mood" class="dark">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Visual References &amp; Moodboard Language</div>
+      <h2 style="color:var(--sand)">The visual world to hand a designer.</h2>
+      <p>Language for a designer, a photographer, or an image researcher so the deck and the brand share one world.</p>
+    </div>
+    <div class="swatches reveal">
+      <div class="sw" style="background:#CB5A33">Sunset coral</div>
+      <div class="sw" style="background:#E37544">Terracotta</div>
+      <div class="sw" style="background:#1F4E46">Palm jade</div>
+      <div class="sw" style="background:#1E1812">Lava charcoal</div>
+      <div class="sw" style="background:#E8DCC8; color:#2A211A">Warm sand</div>
+      <div class="sw" style="background:#B08D4F">Aged brass</div>
+    </div>
+    <div class="moodgrid reveal">
+      <div class="mg" style="background-image:url('tiki-cook-island-sign.jpg')"></div>
+      <div class="mg" style="background-image:url('pool-from-reef-bar.jpg')"></div>
+      <div class="mg" style="background-image:url('bar-reef-interior-wide.jpg')"></div>
+      <div class="mg" style="background-image:url('tiki-carved-golden.jpg')"></div>
+      <div class="mg" style="background-image:url('property-dusk-mountain.jpg')"></div>
+      <div class="mg" style="background-image:url('pool-sunset-umbrellas.jpg')"></div>
+      <div class="mg" style="background-image:url('tiki-fatu-hiva-sign.jpg')"></div>
+      <div class="mg" style="background-image:url('bar-speakeasy.jpg')"></div>
+      <div class="mg" style="background-image:url('pool-bougainvillea.jpg')"></div>
+      <div class="mg" style="background-image:url('tiki-carved-bougainvillea.jpg')"></div>
+      <div class="mg" style="background-image:url('building-porte-cochere.jpg')"></div>
+      <div class="mg" style="background-image:url('pool-from-bar-window.jpg')"></div>
+      <div class="mg" style="background-image:url('tiki-carved-stone.jpg')"></div>
+      <div class="mg" style="background-image:url('dining-sanchos-interior.jpg')"></div>
+      <div class="mg" style="background-image:url('pool-jacuzzi.jpg')"></div>
+      <div class="mg" style="background-image:url('tiki-tuvalu-statue.jpg')"></div>
+      <div class="mg" style="background-image:url('grounds-lawn-cabanas.jpg')"></div>
+      <div class="mg" style="background-image:url('pool-orange-loungers.jpg')"></div>
+      <div class="mg" style="background-image:url('bar-reef-stage.jpg')"></div>
+      <div class="mg" style="background-image:url('property-tuvalu-mountain.jpg')"></div>
+    </div>
+    <div class="mood reveal" id="mood-blocks"></div>
+  </div>
+</section>
+
+<!-- OUTREACH -->
+<section id="outreach" class="sandbg">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Outreach Emails</div>
+      <h2>Drafts for you to send, in your voice.</h2>
+      <p>Deliberately low pressure and personal, leading with admiration for the right specific project and an invitation to a conversation rather than a hard ask. Adjust names, links, and details before sending.</p>
+    </div>
+    <div class="emails" id="email-list"></div>
+  </div>
+</section>
+
+<div class="photoband reveal" style="background-image:url('pool-party-parasol.jpg')"><div class="cap">The social resort</div></div>
+
+<footer>
+  <div class="wrap">
+    <div class="big reveal">The story is real, the team is identified, and the only thing left is to begin.</div>
+    <div class="small">The Tropics &nbsp;·&nbsp; Las Brisas Hotel Group &nbsp;·&nbsp; Palm Springs, California</div>
+    <p class="disc">A note on the numbers. Figures reflect current underwriting and intent, not promises. The $5.5M is the design and repositioning budget. The roughly $157K per key all in basis and the headline revenue picture are presented as targets, not guarantees. Specific deal mechanics stay off this deck by design and live in verbal discussion. Every firm, designer, and award named was verified against current public sources during preparation; names positioned as aspirational or unconfirmed for fit are flagged as such.</p>
+  </div>
+</footer>
+
+<script>
+const slides = [
+  {n:1,img:"pool-sunset-umbrellas.jpg",t:"Cover",th:"One image, one line: a recovered icon of desert leisure.",
+   p:["Title: THE TROPICS. Subtitle: A Midcentury Polynesian Resort, Reborn.","Location line: Palm Springs, California. 92 keys. Approximately 3 acres.","No bullet content on the slide itself. The image carries the room."],
+   v:"Full bleed golden hour shot of the pool and palms with the mountain behind, warm and cinematic. Title set in a confident serif, lower left, small. Let negative space and light do the work.",
+   nt:"Open with the feeling, not the facts. This is a place people already half remember. Our job is to make them lean forward before a single number appears."},
+  {n:2,img:"property-tuvalu-mountain.jpg",t:"Executive Summary",th:"A storied Palm Springs resort, acquired at an attractive basis and repositioned through a focused $5.5M design program.",
+   p:["92 key Midcentury Polynesian resort with real heritage and the largest pool footprint in the desert.","All in basis of roughly $157K per key, which we believe sits well below replacement cost for a comparable lifestyle resort.","$5.5M targeted at the guest experience that moves rate: rooms, bathrooms, public space, pool, and bar.","Family led ownership with prior Palm Springs operating experience at the neighboring Las Brisas Hotel.","We are not inventing a brand. We are recovering one."],
+   v:"Single hero image of the property today with a confident type treatment. One restrained data line along the bottom. Keep most of this in speaker notes, not on screen.",
+   nt:"This is the thirty second version of the whole story. Basis, scale, plan, team, and the line that frames everything. Say it plainly, then move."},
+  {n:3,img:"pool-aerial-mountain.jpg",t:"The Opportunity",th:"An iconic, undercapitalized asset in a market where design is the moat.",
+   p:["The property is operating well below potential and is undercapitalized in both design and operations.","It already generates a meaningful base of room revenue with no real investment in the experience.","The scale of the outdoor environment is the unfair advantage: pool, lawn, and amenity space competitors cannot replicate.","Upside levers include premium suite conversions, expanded patios, cabana and day club revenue, retail, and higher yield uses of underused space."],
+   v:"A quiet shot of the empty pool at dawn, or a single frame where a tired foreground opens to the desert promise behind.",
+   nt:"Frame the opportunity as latent, not broken. The bones, the land, and the story are already here. What is missing is capital and design discipline, which is what we bring."},
+  {n:4,img:"property-dusk-mountain.jpg",t:"Why Palm Springs, Why Now",th:"Ninety miles from Los Angeles, in the global capital of midcentury modernism, at the moment design forward leisure is winning.",
+   p:["Palm Springs is the default long weekend reset for Los Angeles, a deep and durable demand base.","Midcentury modernism is the city's worldwide brand, and Modernism Week is a built in audience and press engine.","The experiential, design led end of the market is where rate, occupancy resilience, and PR concentrate.","In a supply heavy market, the newest and best designed product wins, every time."],
+   v:"Cinematic Palm Springs montage in a single frame: breeze block, palm shadow, a vintage convertible, the San Jacinto wall behind. Warm, nostalgic, unmistakably this place.",
+   nt:"Tie macro demand to micro execution. The market gives us the tailwind. Design is how we capture more of it than the hotel next door."},
+  {n:5,img:"bar-reef-entrance.jpg",t:"Existing Asset Repositioning Thesis",th:"Keep the bones and the story, replace the experience.",
+   p:["Motor lodge form, large pool, generous outdoor areas, and three food and beverage venues are assets to reposition, not liabilities to fight.","The heritage is documented and rare: Oceanic Arts ties, the founding of Tiki Oasis, Rat Pack era celebrity history, and film appearances.","Renovation, not ground up, protects basis and accelerates time to market.","The closest proven analog is a Palm Springs motor lodge reborn as a beloved design hotel."],
+   v:"Before and now treated with restraint: a tasteful archival image paired with one rendered or reference target image. Avoid harsh before shots that cheapen the asset.",
+   nt:"This is the credibility slide for design literate audiences. We are doing adaptive reuse with a real story, which is also the strongest awards and press angle we have."},
+  {n:6,img:"tiki-carved-bougainvillea.jpg",t:"Concept: The Tropics",th:"A sophisticated Midcentury Polynesian oasis: tiki heritage without kitsch, desert modernism with a pulse.",
+   p:["Indoor outdoor living, pool culture, lush desert oasis moments, fire and water, music and cinematic leisure.","Materials: breeze block, lava stone, warm woods, rattan and cane, terrazzo, brass, tropical planting, sculptural shade.","Adult, social, wellness forward, nostalgic but grounded firmly in the present.","Every theatrical move is art directed so the property reads high design, never theme park."],
+   v:"The single most important image in the deck: a reference frame that captures the exact line between sophisticated and kitsch. Warm, layered, confident.",
+   nt:"Land the concept in one sentence the whole family can repeat. Heritage gives us soul, design discipline keeps us credible, and the tension between the two is the brand."},
+  {n:7,img:"bar-reef-crowd.jpg",t:"Brand Promise",th:"A place that feels like somewhere else, ninety miles from home.",
+   p:["Escape that is effortless: arrive, exhale, and step into a curated world.","Nostalgia you can trust: the romance of the original era, delivered to modern standards.","A social, sensory resort built around the pool, the bar, the lawn, and the light.","Quietly excellent service and technology that you feel rather than notice."],
+   v:"A single human moment: people at golden hour by the pool or bar, relaxed and a little glamorous. Slim Aarons energy, not stock photography.",
+   nt:"The promise is emotional, not feature led. People do not buy room counts. They buy how a place makes them feel on a Friday afternoon."},
+  {n:8,img:"pool-party-crowd.jpg",t:"Guest Persona",th:"The design literate Angeleno escapist, and the people they bring.",
+   p:["Core: Los Angeles and Southern California creatives, professionals, and couples who treat the desert as their reset.","Adjacent: design and architecture pilgrims drawn by Modernism Week and the city's reputation.","Occasions: long weekends, milestone celebrations, small buyouts, and shoulder season events.","They value taste, story, and atmosphere over flash, and they share what they love."],
+   v:"A small set of evocative lifestyle frames suggesting the guest, not a literal persona chart. Let the audience recognize themselves or their friends.",
+   nt:"Keep the persona aspirational but specific. This is who sets rate, fills the bar, and posts the property to an audience that books the next stay."},
+  {n:9,img:"pool-loungers.jpg",t:"Competitive Set and Positioning",th:"We own the intersection of heritage, pool culture, and immersive design that no single competitor holds.",
+   p:["The market splits into design boutique, party pool, and heritage motel. The Tropics can credibly hold all three.","Our outdoor scale and pool footprint are difficult to match within the boutique set.","Our documented Polynesian heritage is a story none of the modernist white box hotels can tell.","Position above the motels on design, beside the design leaders on credibility, and alone on immersive heritage."],
+   v:"A clean positioning map as the one diagram in the deck: design credibility versus experiential immersion, with The Tropics in open space. Elegant, not corporate.",
+   nt:"This is where a skeptical investor or operator looks for the moat. Name the real competitors verbally, then show the white space we are built to occupy."},
+  {n:10,img:"tiki-carved-stone.jpg",t:"Design DNA",th:"Desert modernism crossed with the tropical resort fantasy, held together by material honesty.",
+   p:["Lineage: Albert Frey, Richard Neutra, William F. Cody, Donald Wexler, E. Stewart Williams, John Lautner, Palmer and Krisel, Herbert Burns.","Palette: sunset coral, lava charcoal, warm sand and travertine, palm jade, rattan tones, terrazzo flecks, brass.","Moves: deep overhangs, breeze block screens, sculptural shade, fire features, water as sound and light.","Layering: vintage and custom together, never a time capsule, always lived in and warm."],
+   v:"A tight materials and palette board: physical samples photographed in warm desert light. Breeze block, lava stone, cane, terrazzo chip, brass, planting.",
+   nt:"This is the slide the architects and designers will judge us on. Show that we speak the language fluently and have an editor's restraint."},
+  {n:11,img:"building-porte-cochere.jpg",fit:"contain",t:"Architectural Direction",th:"Preserve the modernist bones, open the property to the desert, and let shade and water choreograph the experience.",
+   p:["Respect and recover the original lines rather than overwrite them.","Strengthen indoor outdoor flow: glazing, sliders, deep overhangs, and shaded thresholds.","Sculptural shade structures and breeze block as signature architectural gestures.","Local architect of record who understands desert performance, entitlements, and the tribal land context."],
+   v:"Reference architecture from the desert modernist canon, plus one or two contemporary Palm Springs hospitality projects that prove the approach works at hotel scale.",
+   nt:"Reassure the architecturally fluent that we will not flatten the heritage. Note the local entitlement and ground lease context as a reason a Palm Springs firm leads."},
+  {n:12,img:"dining-sanchos-interior.jpg",t:"Interior Direction",th:"Warm, layered, sensory rooms and public spaces that feel collected, not decorated.",
+   p:["Guestrooms and bathrooms first: these are the rate movers and the loyalty drivers.","Public space as theater: a lobby that sets the story and a bar that becomes the destination.","Material honesty and curated vintage layered with custom pieces and commissioned art.","Residential grade detailing in suites, with hospitality grade durability everywhere."],
+   v:"Interior reference frames that show the exact warmth and layering we want. Avoid cold, white box minimalism, which is the opposite of this brand.",
+   nt:"Connect interiors to economics: the bathroom and room program is where rate and reviews are won, which is why the budget leads there."},
+  {n:13,img:"pool-bougainvillea.jpg",t:"Landscape, Pool, and Outdoor Living",th:"The largest pool footprint in the desert becomes the heart of the brand and the engine of ancillary revenue.",
+   p:["Treat the pool and lawn as the primary public room, not an amenity.","Desert oasis planting: lush moments against a low water native framework.","Programmable outdoor space for cabanas, day club, wellness, events, and music.","Sculptural shade, fire, and water as nighttime atmosphere and photographic signature."],
+   v:"Hero outdoor imagery: pool at golden hour, planted edges, shade structures, people present. One of the most beautiful frames in the deck.",
+   nt:"This is our unfair advantage and our biggest ancillary revenue lever. Make the audience feel the heat lift at five o'clock and the music start."},
+  {n:14,img:"pool-jacuzzi.jpg",t:"Wellness and Longevity",th:"A modern wellness layer that fits the leisure, social brand without turning clinical.",
+   p:["Spa and treatment concept that extends the resort mood rather than competing with it.","Heat and water rituals, outdoor movement, and recovery that suit the desert climate.","A retained wellness advisor shapes programming, not just rooms.","Wellness as a revenue and rate driver and a distinct awards category."],
+   v:"Calm, warm wellness reference imagery: outdoor treatment, water, shade, desert botanicals. Sensory, not sterile.",
+   nt:"Keep wellness on brand. This is a social, sensory resort, so wellness here is pleasure forward and desert specific, not a medical facility bolted on."},
+  {n:15,img:"bar-speakeasy.jpg",t:"Food, Beverage, and the Bar",th:"The tiki bar is the soul of the property and the single most powerful PR and social asset we have.",
+   p:["Three existing venues give us a head start: reposition rather than rebuild.","A signature tiki bar, art directed for sophistication, anchors the brand and the nightlife.","Elevated, approachable food that supports the pool and event programs.","Beverage and experiential design specialists bring authentic heritage without kitsch."],
+   v:"Atmospheric bar imagery: warm light, carved detail, craft cocktails, a crowd. Reference the best of the modern tiki revival, held to a high design bar.",
+   nt:"The bar is where heritage, revenue, and press converge. It is also the natural home for a specialist craft partner working under our creative lead."},
+  {n:16,img:"building-guestroom-wing.jpg",t:"AI and Technology Direction",th:"Technology that removes friction and quietly personalizes, never technology for its own sake.",
+   p:["Mobile first journey: booking, mobile key, messaging, and frictionless check in and out.","An AI assisted concierge and messaging layer for service that feels instant and human.","Operational intelligence: energy, maintenance, and revenue tools that protect margin.","Guest data handled with restraint and care, in service of experience, not surveillance."],
+   v:"Subtle, warm technology imagery, or simply a clean conceptual frame. Do not let this slide feel like an enterprise software pitch.",
+   nt:"Position tech as invisible hospitality and a margin and awards story. The guest should feel ease, not gadgetry."},
+  {n:17,img:"grounds-lawn.jpg",t:"Community and Local Integration",th:"A property that earns local goodwill becomes easier to entitle, staff, program, and celebrate.",
+   p:["Genuine relationships with the city, the tribal community, and the design and preservation world.","Modernism Week participation and local cultural programming as ongoing engagement.","Local sourcing, local artists, and local employment as brand and operating strategy.","A loyalty and membership idea that gives locals a reason to belong, not just visit."],
+   v:"Imagery of people, makers, and events at the property. Community as a living part of the brand, not a corporate checkbox.",
+   nt:"Local integration is both values and strategy. It supports approvals and entitlements and it builds the shoulder season and weekday base."},
+  {n:18,img:"pool-deck-day.jpg",t:"Capex Priorities",th:"Spend the $5.5M where it moves rate, reviews, and revenue first.",
+   p:["Priority one: guestrooms and bathrooms, the core rate and review drivers.","Priority two: pool, lawn, and outdoor program, our differentiator and ancillary engine.","Priority three: lobby and the signature bar, the brand and PR moments.","Disciplined governance: line by line budget control and an ownership approval gate on overruns."],
+   v:"A simple, elegant allocation visual, ordered by guest impact. Clean and confident, not a dense finance table.",
+   nt:"Show that the budget is a strategy, not a wish list. Reference the governance that keeps a passionate design process from breaking the number."},
+  {n:19,img:"building-front.jpg",t:"Phasing Strategy",th:"Sequence the work so the property keeps earning and the renovation lands in time for the right awards cycles.",
+   p:["Phase the program to protect operations and cash flow through the transition.","Long lead items, especially bathroom fixtures, are specified and deposited early to protect the schedule.","Heavy renovation is sequenced to a defined window with a hard procurement backsolve.","Completion timing is mapped deliberately against press moments and awards eligibility."],
+   v:"A clean horizontal timeline with a few honest milestones. Avoid false precision, show sequence and logic.",
+   nt:"Phasing is where credibility lives for operators and lenders. Emphasize the procurement backsolve and the awards timing logic."},
+  {n:20,img:"tiki-tuvalu-statue.jpg",t:"Creative Team",th:"A best in class team, scoped under one creative lead with hard budget governance underneath.",
+   p:["A hospitality grade interior and concept lead holds the vision.","A local Palm Springs architect of record carries documentation, performance, and approvals.","A tiki heritage specialist delivers authentic soul, art directed to stay sophisticated.","An awards grade landscape vision, a wellness advisor, and a technology partner complete the team."],
+   v:"A refined name wall of target firms, or a single composite image of their best analogous work. Signal taste and seriousness.",
+   nt:"Show that we know exactly who should touch this and in what order. The detailed shortlist with proof points lives in the leave behind."},
+  {n:21,img:"pool-orange-loungers.jpg",t:"Awards Strategy",th:"A sequenced roadmap from local recognition now to the major hospitality design awards after completion.",
+   p:["Near term: local Palm Springs and preservation recognition plus Modernism Week visibility.","California and national: Architizer A plus Awards, HD Awards, Gold Key Awards, AHEAD Americas.","Global and aspirational: Dezeen Awards and AHEAD Global, timed to completion eligibility windows.","Categories span hotel design, interiors, bar and restaurant, landscape, wellness, technology, and adaptive reuse."],
+   v:"An awards matrix or tiered ladder, clean and confident. Local at the base, global at the top, with target categories named.",
+   nt:"Be honest that most design awards require a completed project, so the major push follows the renovation. Use the interim for local wins and press."},
+  {n:22,img:"tiki-carved-golden.jpg",t:"Press and Launch Strategy",th:"Tell the recovery story to design, travel, and lifestyle press, with the bar and pool as the hooks.",
+   p:["The narrative writes itself: an icon recovered, a heritage honored, a desert reborn.","Design and shelter press, travel media, and the Palm Springs and Modernism Week ecosystem are the first targets.","The signature bar and the pool are the most photographable, most shareable launch assets.","Phase coverage: concept and one to watch now, full launch at completion."],
+   v:"A press worthy hero frame and a few mock coverage moments. Make the audience see the property on the page and the feed.",
+   nt:"Press is a design decision as much as a PR one. We are building the shots that earn the coverage, which is why the bar and pool lead."},
+  {n:23,img:"grounds-lawn-cabanas.jpg",t:"Risks and Mitigations",th:"Name the real risks and show the discipline that contains them.",
+   p:["Scope creep from passionate designers: hard budget covenants and an ownership approval gate.","Schedule slip on long lead items: early specification and deposits as a hard backsolve.","Kitsch risk on the heritage: every theatrical move art directed by the creative lead.","Local and entitlement complexity: a local architect and genuine community engagement from day one."],
+   v:"Restrained, confident layout. Risks stated plainly with the mitigation beside each. This slide builds trust by not hiding.",
+   nt:"Sophisticated audiences trust the team that names its own risks. Keep the tone calm and solution led, not defensive."},
+  {n:24,img:"pool-night-palms.jpg",t:"Next Steps",th:"Engage the creative lead, lock design governance, and start the awards and press clock.",
+   p:["Confirm the creative lead and architect of record, then scope the rest of the team beneath them.","Adopt the design governance: budget covenants, approval gate, quantity surveyor on procurement.","Open the awards calendar and begin local and Modernism Week relationships now.","Schedule the on site design tour to ground the concept in the real building."],
+   v:"A clean closing frame, the hero image again, and a single forward looking line. End on confidence, not a to do list on screen.",
+   nt:"Close by making the next move feel obvious and low risk. The story is real, the team is identified, and the only thing left is to begin."}
+];
+
+const teamRows = [
+  {grp:"Interior and concept lead"},
+  ["Commune Design","Closest built analog, the Ace Hotel and Swim Club","Primary","high","High"],
+  ["Christopher Kennedy","Local creative, Modernism Week and press halo","Co lead","high","High"],
+  ["B2 Design Co","Thompson Palm Springs interiors, proven at scale","Alternate","med","Medium"],
+  ["Martyn Lawrence Bullard","Sands Hotel and Spa, a built in press magnet","Alternate","exp","Exploratory"],
+  ["Steve Hermann","L'Horizon and The Weekend, luxury boutique","Alternate","exp","Exploratory"],
+  {grp:"Architect of record and restoration"},
+  ["o2 Architecture","Local desert literacy, Drift and the Beadle House","Primary","high","High"],
+  ["Marmol Radziner","Museum grade midcentury restoration, design build","Alternate","high","High"],
+  {grp:"Tiki and bar craft"},
+  ["“Bamboo Ben” Bassham","Eli Hedley and Enchanted Tiki Room lineage","Primary","med","High for the bar"],
+  ["Ignacio “Notch” Gonzalez","Immersive, award winning bar design","Alternate","exp","Exploratory"],
+  {grp:"Landscape and pool"},
+  ["OJB Landscape Architecture","Thompson Palm Springs desert garden, awards grade","Concept","med","Medium"],
+  ["RGA Landscape Architects","Palm Desert since 1977, desert horticulture","Execution","med","Medium"],
+  {grp:"Wellness and technology"},
+  ["Wellness and longevity advisor","Desert spa concept and programming, to select","Specialist","exp","Exploratory"],
+  ["Hospitality technology partner","Mobile key, concierge, and the AI stack","Specialist","med","Medium"]
+];
+
+const profiles = [
+  {rk:"Interior · Primary",name:"Commune Design",sub:"Interior &amp; concept lead · Los Angeles",
+   f:{"Why they fit":"Commune converted a Palm Springs motor lodge, the former Howard Johnson's, into the Ace Hotel and Swim Club, the single closest built analog to The Tropics. Masters of indoor outdoor desert living, honest materials, curated vintage layering, and pool culture.",
+      "Proof point":"Ace Hotel and Swim Club, Palm Springs, a 180 plus room motor lodge reborn as a beloved design hotel. Also the Durham Hotel.",
+      "Best use":"Own the interior concept, guestrooms, public spaces, and the recovered brand narrative, and art direct the heritage so it stays sophisticated.",
+      "Risk":"High demand and premium fees, and they will want creative control. Define scope, decision rights, and a budget covenant up front."}},
+  {rk:"Interior · Co lead",name:"Christopher Kennedy",sub:"Local creative &amp; interiors · Palm Springs",
+   f:{"Why they fit":"The most visible midcentury interiors voice in Palm Springs, with built in Modernism Week and press relationships. Ran the Christopher Kennedy Compound showhouse for six years and authored two books on midcentury design.",
+      "Proof point":"The Christopher Kennedy Compound at Modernism Week, plus an extensive jet set modern residential and boutique portfolio.",
+      "Best use":"Local creative partner, Modernism Week activation, press halo, and residential grade detailing for suites. A candidate for a creative lead seat.",
+      "Risk":"Primarily residential and interiors rather than full hospitality operating scale, so pair with a documentation capability."}},
+  {rk:"Interior · Alternate",name:"B2 Design Co",sub:"Hospitality interiors · Los Angeles area",
+   f:{"Why they fit":"Designed the interiors of Thompson Palm Springs, blending midcentury with a fresh, non literal desert story of soft stone, light woods, brass, and vivid color. The most current, at scale, design forward hotel delivery in this exact market.",
+      "Proof point":"Thompson Palm Springs interiors, with SMS Architecture on the shell. A new build, design district landmark.",
+      "Best use":"Hospitality interior lead or a strong alternate to Commune, with recent at scale Palm Springs experience and a working knowledge of brand hotel standards.",
+      "Risk":"A newer relationship for us and a brand hotel pedigree. Confirm availability, fees, and fit with an independent, heritage led brief."}},
+  {rk:"Interior · Alternate",name:"Martyn Lawrence Bullard",sub:"Designer · Los Angeles",
+   f:{"Why they fit":"A globally known designer who turned the Sands Hotel and Spa in Palm Springs into a layered, photographed desert property. Knows how to make a hotel a media object and a press story on opening day.",
+      "Proof point":"Sands Hotel and Spa, Palm Springs, a 46 room reinvention, plus a long celebrity and hospitality portfolio.",
+      "Best use":"A high glamour interior alternative when the brief leans hard toward press, personality, and a singular point of view.",
+      "Risk":"Maximalist and themed by instinct, and a premium name. Needs tight art direction to stay on the sophisticated side of the line."}},
+  {rk:"Interior · Alternate",name:"Steve Hermann",sub:"Architect &amp; designer · Beverly Hills, Palm Springs",
+   f:{"Why they fit":"Architect designer behind two luxury Palm Springs boutique repositionings, with a clean, modern, indoor outdoor sensibility and design and build under one roof.",
+      "Proof point":"L'Horizon Resort and The Weekend, both Palm Springs luxury boutique reimaginings.",
+      "Best use":"A combined design and architecture alternative for a smaller, more luxury reading of the brand.",
+      "Risk":"Portfolio runs smaller and more ultra luxury than a 92 key social resort. Test fit for scale, price point, and operating model."}},
+  {rk:"Architect · Primary",name:"o2 Architecture",sub:"Architect of record · Palm Springs",
+   f:{"Why they fit":"A Palm Springs firm with deep desert modernist literacy, a sustainability focus, and direct boutique hotel experience. Local standing matters for city approvals and the tribal ground lease context.",
+      "Proof point":"Designed Drift Palm Springs, a 30 room boutique hotel, and resurrected the unbuilt Al Beadle House in Palm Springs.",
+      "Best use":"Architect of record carrying schematic through construction documents, site and shell, MEP coordination, and city and entitlement work.",
+      "Risk":"Portfolio leans residential, so pair with a hospitality interiors lead for guest experience and FF and E depth."}},
+  {rk:"Architect · Alternate",name:"Marmol Radziner",sub:"Architecture, restoration &amp; design build · Los Angeles",
+   f:{"Why they fit":"The museum grade restorers of Palm Springs midcentury icons, with architecture, interiors, landscape, and construction under one roof. The deepest desert modernist restoration credibility available, and a single point of accountability for adaptive reuse.",
+      "Proof point":"Restored the Kaufmann House by Richard Neutra, plus works by Albert Frey, Schindler, and Lautner, and new desert homes across the Coachella Valley.",
+      "Best use":"A heavyweight architect of record and restoration lead, or an integrated design build partner for the reuse of the three buildings.",
+      "Risk":"A premium firm weighted to high end residential. Confirm hospitality scope, team, and fees against the $5.5M program."}},
+  {rk:"Bar · Primary",name:"“Bamboo Ben” Bassham",sub:"Tiki heritage environment design",
+   f:{"Why they fit":"The foremost tiki revival builder, and the grandson of Eli Hedley, who created decor for Disneyland's Enchanted Tiki Room. A living link to the exact Oceanic Arts and Disney lineage The Tropics already claims.",
+      "Proof point":"Frankie's Tiki Room in Las Vegas, the Pacific Seas at Clifton's in Los Angeles, and Forbidden Island in Alameda.",
+      "Best use":"Deliver the signature tiki bar and select lobby heritage moments, art directed by the creative lead to stay sophisticated.",
+      "Risk":"Can tip toward kitsch without tight art direction. Scope as specialist craft for one or two spaces, not the whole property."}},
+  {rk:"Bar · Alternate",name:"Ignacio “Notch” Gonzalez",sub:"Immersive bar &amp; experience design",
+   f:{"Why they fit":"An award winning immersive bar designer who builds cinematic, multisensory escapism, aligning with the immersive resort thesis and experiential revenue strategy.",
+      "Proof point":"Mothership in San Diego, which won an Orchid Award for interior design, plus House of Bamboo in Camarillo.",
+      "Best use":"A single hero experiential moment, such as the signature bar or one destination lounge, designed to drive PR and social reach.",
+      "Risk":"Highly thematic, so contain to one or two showpiece spaces and hold to the overall design language."}},
+  {rk:"Landscape · Concept",name:"OJB Landscape Architecture",sub:"Landscape &amp; pool vision",
+   f:{"Why they fit":"A nationally awarded landscape practice with proven desert hospitality at scale. Turns outdoor space into the heart of a place, which is exactly the bet on the largest pool footprint in the desert.",
+      "Proof point":"The Thompson Palm Springs garden, a native and arid adapted desert oasis woven through 168 rooms, plus an acclaimed national civic and hospitality portfolio.",
+      "Best use":"Landscape and pool masterplan and desert oasis planting concept, with a local landscaper executing construction documents.",
+      "Risk":"Large firm fees for a 92 key boutique. Consider engaging for concept and oversight, with local execution beneath."}},
+  {rk:"Landscape · Execution",name:"RGA Landscape Architects",sub:"Landscape execution &amp; horticulture · Palm Desert",
+   f:{"Why they fit":"A Coachella Valley practice working the desert since 1977, nationally recognized for creating beauty where water is limited. Local plant sourcing, cost discipline, and maintenance reality on the ground.",
+      "Proof point":"A long desert portfolio across Palm Springs, Rancho Mirage, Indian Wells, and La Quinta.",
+      "Best use":"Construction document level planting and irrigation and on the ground execution under the concept landscape architect.",
+      "Risk":"Vet the portfolio for resort scale and design polish, and confirm comfort working beneath a national concept lead."}},
+  {rk:"Wellness · Specialist",name:"Wellness &amp; longevity advisor",sub:"Spa concept &amp; programming",
+   f:{"Why they fit":"A retained advisor shapes a wellness layer that fits the social, leisure brand and the desert climate, and opens a distinct awards category.",
+      "Proof point":"To be selected. Target a consultant with desert or resort spa programming experience.",
+      "Best use":"Concept and programming for treatments, heat and water rituals, and outdoor movement, integrated with the interior lead.",
+      "Risk":"Keep the programming pleasure forward and on brand, not clinical."}},
+  {rk:"Technology · Specialist",name:"Hospitality technology partner",sub:"Guest experience &amp; AI stack",
+   f:{"Why they fit":"A modern stack removes friction and quietly personalizes the stay while protecting margin. A platform and integrator selection, not a single designer.",
+      "Proof point":"Evaluate established property management, mobile key and guest app, and AI assisted concierge providers against boutique resort needs.",
+      "Best use":"Define and integrate the booking to checkout journey, the service messaging layer, and operational intelligence, with privacy by design.",
+      "Risk":"Avoid technology for its own sake. Select for invisible hospitality and clean integration."}}
+];
+
+const awardTiers = [
+  {h:"Tier 1 · Local: Palm Springs and Coachella Valley",sub:"Cheap, fast, relationship building. Start now.",
+   rows:[["Modernism Week","Inclusion on tours, talks, or preview events; a Tropics moment during the festival","Heritage and recovery story to the exact audience that loves it","high","High, now"],
+         ["Local preservation recognition","Palm Springs preservation honors; historic site recognition where eligible","Documented heritage and a sensitive renovation","high","High"],
+         ["Greater Palm Springs tourism","Local tourism, hospitality, and chamber recognition","Investment, jobs, and a marquee reopening for the city","med","Medium"]]},
+  {h:"Tier 2 · California and Western U.S.",sub:"",
+   rows:[["Architizer A+ Awards","Hotels and resorts; adaptive reuse; popular vote plus jury","Renovation, desert modernism, and a shareable story","high","High"],
+         ["AIA California / local chapter","Architecture and adaptive reuse","Architect of record led recognition","med","Medium"],
+         ["California Preservation Foundation","Rehabilitation and reuse, where eligible","Heritage and sensitive renovation","med","Medium"]]},
+  {h:"Tier 3 · National U.S.",sub:"The core hospitality design push, after completion.",
+   rows:[["AHEAD Americas (Sleeper)","Hotel Renovation; Guestrooms; Bar; Restaurant; Lobby and Public Spaces; Resort","The marquee Americas hospitality design award; renovation and bar are natural entries","high","High"],
+         ["HD Awards","Lifestyle Hotel; Public Space; Bar; Amenity Spaces, among 32 categories","Multiple credible entries across rooms, bar, and public space","high","High"],
+         ["Gold Key Awards","Hospitality interiors across roughly two dozen categories, including wellness","Interiors and the bar program; a long running, prestigious program","high","High"],
+         ["Skift IDEA Awards","Brand, design, and guest experience","The recovered brand and experiential repositioning","exp","Exploratory"],
+         ["HotelTech / Visionary Awards","Guest experience technology","The invisible hospitality tech and AI layer","exp","Exploratory"],
+         ["ULI Americas Awards","Development excellence","Adaptive reuse and community value, a high bar","exp","Exploratory"]]},
+  {h:"Tier 4 · Global",sub:"Aspirational and timing led.",
+   rows:[["Dezeen Awards","Hotel interior; rebirth or adaptive reuse retrofit; sustainability","Timed to the completion eligibility window; high prestige","med","Medium, timing led"],
+         ["AHEAD Global","Cross regional best of the AHEAD winners","Follows an AHEAD Americas win","exp","Exploratory"],
+         ["LIV Hospitality Design Awards","International hospitality and interior design","Broad international visibility","exp","Exploratory"]]}
+];
+
+const planPhases = [
+  {h:"Days 0 to 30 · Engage and govern",
+   rows:[["Creative lead","Open conversations with Commune and Christopher Kennedy for the interior and concept lead seat, and o2 Architecture for architect of record.","Mark"],
+         ["Design governance","Adopt the structure: one creative lead, separate documentation, quantity surveyor on procurement, budget covenants, and an ownership approval gate.","Mark, Michelle"],
+         ["Concept and moodboard","Lock the concept line and the materials and palette board so every partner works from one reference.","Mark"],
+         ["Awards calendar","Build the awards and deadlines calendar and flag the completion windows that drive timing.","Mark"]]},
+  {h:"Days 30 to 60 · Develop and ground",
+   rows:[["On site design tour","Walk the property with the architect and creative lead during the on site window to ground the concept and inform preliminary capex.","Mark on site"],
+         ["Specialist craft","Scope the tiki bar with Bamboo Ben or Notch Gonzalez as specialist craft under the creative lead, contained to the bar and one or two moments.","Mark"],
+         ["Landscape","Open a landscape concept conversation with OJB and identify a local execution partner to vet.","Mark"],
+         ["Press groundwork","Begin Modernism Week and local press relationships and draft the recovery story narrative.","Mark"]]},
+  {h:"Days 60 to 90 · Align and stage",
+   rows:[["Budget reconciliation","Reconcile the design direction against the $5.5M program by priority order, and confirm the procurement backsolve for long lead items.","Mark, Michelle"],
+         ["Team confirmation","Confirm the creative lead and architect of record on terms, with scope, decision rights, and budget covenants signed.","Mark, Raymond"],
+         ["Wellness and tech","Shortlist a wellness advisor and a technology partner and brief them on the brand and operating model.","Mark, Michael"],
+         ["Awards and press","Stage the first submissions for the cycle after completion and lock the concept and one to watch press plan.","Mark"]]}
+];
+
+const moodBlocks = [
+  {h:"Materials &amp; textures",items:["Breeze block screens, lava stone, warm woods, rattan and cane, terrazzo, brass, and tropical planting.","Sculptural shade structures, fire features, and water as both sound and light.","Curated vintage layered with custom pieces and commissioned art, never a sterile time capsule."]},
+  {h:"Reference directions",items:["Desert modernism: Albert Frey and the Frey House II, Neutra, Wexler, Cody, and E. Stewart Williams.","The original Caliente Tropics and the golden age of Polynesian leisure, honored and refined.","The Enchanted Tiki Room and Oceanic Arts lineage, treated as heritage craft, art directed away from kitsch.","Slim Aarons poolside California leisure for the human, golden hour energy.","The Acapulco and Las Brisas tradition of indoor outdoor resort romance."]},
+  {h:"Light, sound &amp; motion",items:["Low warm glow, dappled palm shadow, and the quality of desert light at five o'clock.","Water in motion, soft exotica and warm music, the lift of heat at sunset."]},
+  {h:"Photographic style",items:["Full bleed, golden hour, people present, cinematic, with a 35mm warmth. Images fill the frame and content floats on top.","Avoid cold white box minimalism, harsh midday light, and empty staged rooms. This brand is warm, social, and alive."]}
+];
+
+const emails = [
+  {who:"Commune Design",to:"Interior &amp; concept lead",subj:"The Tropics, Palm Springs: a motor lodge worth recovering",
+   body:["Hi [name], I have admired the Ace and Swim Club for years, and the way you turned a Palm Springs motor lodge into something people genuinely love is the closest thing I have seen to what we are setting out to do.",
+         "My family's group has an executed LOI on The Tropics, the 92 key Polynesian resort on South Palm Canyon with the documented Oceanic Arts and Tiki Oasis history and what we believe is the largest pool footprint in the desert. We are planning a focused $5.5M design and repositioning program, rooms and bathrooms and the pool and bar first, with the goal of recovering the brand rather than inventing one.",
+         "I would love to find time for an informal conversation about whether the concept resonates with you. No deck required yet, just a chance to compare notes. Are you around in the next couple of weeks?"],sig:"Warmly, Mark"},
+  {who:"o2 Architecture",to:"Architect of record",subj:"Desert modernism and a Polynesian icon on Palm Canyon",
+   body:["Hi Lance, your work on Drift and the way you brought the Beadle House to life are exactly the kind of desert literacy we are looking for. I am working on the repositioning of The Tropics, the 92 key Polynesian resort on South Palm Canyon, and the local knowledge of performance, entitlements, and the ground lease context matters as much to us as the design.",
+         "We have an executed LOI and a $5.5M design program in front of us, and we are assembling a team with a hospitality interior lead and an architect of record who can carry documentation and the city work in partnership.",
+         "Could we grab a coffee in Palm Springs when I am out this summer? I would value your read on the building and the approach."],sig:"Best, Mark"},
+  {who:"Christopher Kennedy",to:"Local creative &amp; interiors partner",subj:"The Tropics and a Modernism Week story worth telling",
+   body:["Hi Christopher, your Modernism Week Compound is one of the best things that happens in this town each year, and your eye for midcentury warmth is exactly the sensibility I keep coming back to.",
+         "I am leading the design vision for the repositioning of The Tropics on South Palm Canyon, recovering its Polynesian heritage with real design discipline and a $5.5M program. There is a creative role here, and a natural Modernism Week and press story, that I think could be a wonderful fit.",
+         "Would you be open to a conversation about the concept and where you might sit in it? I would love your perspective either way."],sig:"Warmly, Mark"},
+  {who:"“Bamboo Ben” Bassham",to:"Tiki heritage specialist",subj:"The Tropics tiki bar, and your grandfather's lineage",
+   body:["Hi Ben, I have followed your work from Frankie's to the Pacific Seas, and the through line back to Eli Hedley and the Enchanted Tiki Room is part of why I am reaching out. The Tropics has its own documented Oceanic Arts and Polynesian heritage, and we want the signature bar to feel authentic rather than themed.",
+         "We are early in the design of a full repositioning, and I am imagining a tiki bar that is the soul of the property, art directed within a sophisticated overall design. Your craft is exactly what that needs.",
+         "Could we set up a call to talk through the bar and how you like to work with a lead design team? I would love to hear your thoughts."],sig:"Cheers, Mark"},
+  {who:"OJB Landscape Architecture",to:"Landscape &amp; pool vision",subj:"The largest pool in the desert, looking for a vision",
+   body:["Hello, I am working on the repositioning of The Tropics, a 92 key resort in Palm Springs with an outdoor footprint and what we believe is the largest pool in the desert market. We see the pool and lawn as the heart of the brand, not an amenity, and we are looking for a landscape vision that can carry that ambition and stand up to the best hospitality work.",
+         "We are assembling the team now, and I would love to explore a concept and oversight role for your studio, with a local partner handling execution under your direction.",
+         "Is there someone on your team I could speak with about fit and how you like to engage on a project of this scale? Thank you for considering it."],sig:"Best regards, Mark"}
+];
+
+const priClass = p => p==="high"?"high":p==="med"?"med":"exp";
+const priLabel = (p,l)=>`<span class="pri ${priClass(p)}">${l}</span>`;
+
+// render slides as a compact index (number, title, thesis)
+document.getElementById("slides").innerHTML = `
+  <div class="deckindex reveal">
+    ${slides.map(s=>`
+      <div class="dl">
+        <div class="dl-n">${String(s.n).padStart(2,"0")}</div>
+        <div class="dl-b"><div class="dl-t">${s.t}</div><div class="dl-th">${s.th}</div></div>
+      </div>`).join("")}
+  </div>`;
+
+// team rows
+document.getElementById("teamrows").innerHTML = teamRows.map(r=>{
+  if(r.grp) return `<tr class="grp"><td colspan="4">${r.grp}</td></tr>`;
+  return `<tr><td class="name">${r[0]}</td><td>${r[1]}</td><td class="seat">${r[2]}</td><td>${priLabel(r[3],r[4])}</td></tr>`;
+}).join("");
+
+// profiles
+document.getElementById("profiles").innerHTML = profiles.map(p=>`
+  <div class="card reveal">
+    <div class="rk">${p.rk}</div>
+    <h4>${p.name}</h4>
+    <div class="cat">${p.sub}</div>
+    <dl>${Object.entries(p.f).map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
+  </div>`).join("");
+
+// awards
+document.getElementById("awards-tiers").innerHTML = awardTiers.map(t=>`
+  <div class="tiergroup reveal">
+    <h3>${t.h}</h3>${t.sub?`<div class="sub">${t.sub}</div>`:""}
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr><th>Award or platform</th><th>What to target</th><th>The Tropics angle</th><th>Priority</th></tr></thead>
+      <tbody>${t.rows.map(r=>`<tr><td class="name">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${priLabel(r[3],r[4])}</td></tr>`).join("")}</tbody>
+    </table></div>
+  </div>`).join("");
+
+// plan
+document.getElementById("plan-phases").innerHTML = planPhases.map(ph=>`
+  <div class="tiergroup reveal">
+    <h3>${ph.h}</h3>
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr><th style="width:22%">Workstream</th><th>Action</th><th style="width:16%">Owner</th></tr></thead>
+      <tbody>${ph.rows.map(r=>`<tr><td class="name">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join("")}</tbody>
+    </table></div>
+  </div>`).join("");
+
+// mood
+document.getElementById("mood-blocks").innerHTML = moodBlocks.map(b=>`
+  <div class="block"><h4>${b.h}</h4><ul>${b.items.map(i=>`<li>${i}</li>`).join("")}</ul></div>`).join("");
+
+// emails
+document.getElementById("email-list").innerHTML = emails.map(e=>`
+  <div class="email reveal">
+    <div class="ehead"><div class="to">To · ${e.to}</div><div class="who">${e.who}</div></div>
+    <div class="ebody">
+      <div class="subj"><b>Subject:</b> ${e.subj}</div>
+      ${e.body.map(p=>`<p>${p}</p>`).join("")}
+      <p class="sig">${e.sig}</p>
+    </div>
+  </div>`).join("");
+
+// reveal on scroll
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target);} });
+},{threshold:.12, rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+// hero loads immediately
+window.addEventListener("load",()=>{
+  document.querySelectorAll(".hero .reveal").forEach((el,i)=>{ el.style.transitionDelay=(i*.12)+"s"; el.classList.add("in"); });
+});
+</script>
+</body>
+</html>
